@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <html>
+<head>
+    <title>
+        <%= title %>
+    </title>
+</head>
+
+<body>
+    <h1><%= name %> </h1>
+    <h1><%= title %></h1>
+
+    <ul>
+        <% for (let i=0; i<MEANStack.length; i++) { %>
+            <li><strong>
+                    <%= MEANStack[i].component %>
+                </strong>: <%= MEANStack[i].definition %>
+            </li>
+            <% } %>
+    </ul>
+</body>
+</html>
